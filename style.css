@@ -60,7 +60,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
@@ -74,6 +73,7 @@
   margin-bottom: 10px;
   background: #fff;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .block2__text {

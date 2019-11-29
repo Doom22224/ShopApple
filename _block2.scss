@@ -15,7 +15,7 @@
     max-width: 1279px;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -27,6 +27,7 @@
     margin-bottom: 10px;
     background: #fff;
     border-radius: 5px;
+    overflow: hidden;
     
   }
 
