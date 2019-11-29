@@ -1,0 +1,132 @@
+.block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.block1__slide {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  max-width: 600px;
+}
+
+.block1__image-1 {
+  width: 100%;
+}
+
+.block1__text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.block1__text-slide {
+  font-size: 42px;
+}
+
+.block1__button {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 14px 10px 14px;
+  background-color: #fff;
+  margin-top: 50px;
+  font-size: 18px;
+  max-width: 300px;
+}
+
+.block2 {
+  max-width: 100%;
+}
+
+.block2__best {
+  font-size: 32px;
+  margin-bottom: 15px;
+  max-width: 1200px;
+}
+
+.block2__bord {
+  max-width: 1279px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.block2__item {
+  display: inherit;
+  max-width: 600px;
+  padding: 14px 14px 14px 14px;
+  margin: 5px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.block2__text {
+  margin-top: 20px;
+  min-width: 250px;
+}
+
+.block2__price {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff58c;
+  max-width: 120px;
+  text-align: center;
+}
+
+.block2__image {
+  width: 50%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  background: #f2f2f2;
+}
+
+.container {
+  padding: 14px 14px 14px 14px;
+  margin: 5px;
+  max-width: 1920px;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.white {
+  width: 100%;
+  background: #fff;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

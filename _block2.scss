@@ -1,0 +1,50 @@
+.block2 {
+  
+  max-width: 100%;
+
+
+  &__best {
+    font-size: 32px;
+    margin-bottom: 15px;
+    
+    max-width: 1200px;
+    
+  }
+
+  &__bord {
+    max-width: 1279px;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    
+  }
+
+  &__item {
+    display: inherit;
+    max-width: 600px;
+    padding: 14px 14px 14px 14px;
+    margin: 5px;
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    min-width: 250px;
+  }
+
+  &__price {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff58c;
+    max-width: 120px;
+    text-align: center;
+  }
+
+
+  &__image {
+    width: 50%;
+  }
+}
