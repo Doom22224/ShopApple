@@ -115,9 +115,21 @@
   }
 }
 
+@media (max-width: 1044px) and (max-width: 540px) {
+  .block2__item {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.block2__item-info {
+  position: relative;
+}
+
 .block2__text {
   margin-top: 20px;
   min-width: 250px;
+  margin-bottom: 70px;
 }
 
 @media (max-width: 1044px) {
@@ -128,12 +140,14 @@
 }
 
 .block2__price {
-  margin-top: 20px;
   padding: 10px;
   border-radius: 5px;
   background: #fff58c;
-  max-width: 120px;
+  width: 120px;
   text-align: center;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
 }
 
 .block2__image {

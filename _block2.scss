@@ -32,6 +32,15 @@
     @media (max-width: $tablet) {
       flex-wrap: wrap-reverse;
       max-width: 300px;
+
+      @media (max-width:$mobileSmall) {
+      width: 100%;
+      max-width: 100%;
+      }
+    }
+
+    &-info {
+      position: relative;
     }
     
   }
@@ -39,21 +48,25 @@
   &__text {
     margin-top: 20px;
     min-width: 250px;
+    margin-bottom: 70px;
 
     @media (max-width:$tablet) {
       min-width: 0;
       max-width: 200px;
     }
+
   }
 
   &__price {
-    margin-top: 20px;
     padding: 10px;
     border-radius: 5px;
     background: #fff58c;
-    max-width: 120px;
+    width: 120px;
     text-align: center;
     
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
   }
 
 
