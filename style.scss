@@ -1,6 +1,7 @@
 @import "_variable.scss";
 @import "_block1.scss";
 @import "_block2.scss";
+@import "_block3.scss";
 
 * {
   padding:0;
@@ -32,6 +33,13 @@ h1 {
 
 h2 {
   font-size: 24px;
+  margin-top: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+  color:#919191;
 }
 
 .white {
@@ -40,6 +48,11 @@ h2 {
 }
 
 section {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
   display: flex;
   justify-content: center;
 }
