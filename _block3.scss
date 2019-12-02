@@ -35,9 +35,36 @@
     flex-direction: column;
     width: 405px;
 
+    @media (max-width: $tabletM) {
+     width:400px;
+      
+    }
   }
 
   &__form {
     display: flex;
+
+    @media (max-width: $tabletM) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__comment {
+
+    @media (max-width: $tabletM) {
+      margin-top: 10px;
+      width: 400px;
+      
+    }
+  }
+
+  &__button {
+    margin-top: 5px;
+    text-align: right;
+
+    @media (max-width: $tabletM) {
+     text-align: center;
+      
+    }
   }
 }

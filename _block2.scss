@@ -31,7 +31,8 @@
     position: relative;
 
     @media (max-width: $tablet) {
-      flex-wrap: wrap-reverse;
+      flex-direction: column;
+      
       max-width: 300px;
 
       @media (max-width:$mobileSmall) {
@@ -41,7 +42,13 @@
     }
 
     &-info {
-      vertical-align: top;
+      
+      @media (max-width: $tablet) {
+
+      order: 1;
+      flex-grow: 1;
+      }
+      
     }
     
   }
