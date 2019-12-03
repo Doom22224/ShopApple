@@ -52,11 +52,12 @@
     margin-top: 50px;
     font-size: 18px;
     max-width: 300px;
-    transition: 300ms ease;
+    cursor: pointer;
 
     &:hover {
       background: #000;
       color: #fff;
+      transition: 300ms ease;
     }
 
     @media (max-width: $mobile) {
