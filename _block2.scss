@@ -111,6 +111,10 @@
 
   &__name {
     margin-bottom:20px ;
+
+    @media(max-width:$mobileSmall) {
+      text-align: center;
+    }
   }
 
 }

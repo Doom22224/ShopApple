@@ -223,6 +223,12 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 540px) {
+  .block2__name {
+    text-align: center;
+  }
+}
+
 .block3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,9 +359,11 @@
 }
 
 .block3__h2 {
-  text-align: center;
   margin-bottom: 10px;
-  max-width: 800px;
+}
+
+.block3__content {
+  text-align: center;
 }
 
 .block4 {
