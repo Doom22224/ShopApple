@@ -69,6 +69,11 @@
   max-width: 300px;
 }
 
+.block1__button:hover {
+  background: #000;
+  color: #fff;
+}
+
 @media (max-width: 769px) {
   .block1__button {
     margin-bottom: 100px;
@@ -158,6 +163,10 @@
   position: absolute;
   bottom: 14px;
   left: 14px;
+}
+
+.block2__price:hover {
+  background: #89f200;
 }
 
 .block2__image {
@@ -273,6 +282,11 @@
   border-radius: 4px;
   padding: 10px 14px 10px 14px;
   background-color: #fff;
+}
+
+.block3__button:hover {
+  background: #000;
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
