@@ -2,6 +2,7 @@
 @import "_block1.scss";
 @import "_block2.scss";
 @import "_block3.scss";
+@import "_block4.scss";
 
 * {
   padding:0;
@@ -17,8 +18,7 @@ body {
 }
 
 .container {
-  padding: 14px 14px 14px 14px;
-  margin: 5px;
+  padding: 24px 14px 24px 14px;
   max-width: 1920px;
 
 }
@@ -32,14 +32,13 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin-top: 15px;
+  font-weight: normal;
 }
 
 h3 {
   font-size: 24px;
-  font-weight: normal;
-  color:#919191;
 }
 
 .white {
