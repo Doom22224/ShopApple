@@ -67,17 +67,19 @@
   &__price {
     padding: 10px;
     border-radius: 5px;
-    background: #fff58c;
+    // background: #f2f2f2;
     width: 120px;
     text-align: center;
-    
+    border: 1px solid #559cff;
     position: absolute;
     bottom: 14px;
     left: 14px;
 
     &:hover {
-      background: #89f200;
-
+      background: #559cff;
+      color: #fff;
+      transition: 300ms ease;
+      // border: 1px solid black;
     }
   }
 

@@ -67,6 +67,8 @@
   margin-top: 50px;
   font-size: 18px;
   max-width: 300px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .block1__button:hover {
@@ -157,16 +159,19 @@
 .block2__price {
   padding: 10px;
   border-radius: 5px;
-  background: #fff58c;
   width: 120px;
   text-align: center;
+  border: 1px solid #559cff;
   position: absolute;
   bottom: 14px;
   left: 14px;
 }
 
 .block2__price:hover {
-  background: #89f200;
+  background: #559cff;
+  color: #fff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .block2__image {
@@ -187,6 +192,19 @@
   }
 }
 
+.block3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .block3__line {
   color: #919191;
   border-bottom: 1px solid #919191;
@@ -196,9 +214,12 @@
 
 .block3__pole {
   width: 400px;
-  height: 30px;
+  height: 48px;
   margin-bottom: 14px;
   border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  padding: 5px;
 }
 
 @media (max-width: 540px) {
@@ -258,6 +279,8 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
 }
 
 @media (max-width: 1024px) {
@@ -282,6 +305,8 @@
   border-radius: 4px;
   padding: 10px 14px 10px 14px;
   background-color: #fff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .block3__button:hover {
@@ -296,7 +321,7 @@
 }
 
 .block3__h2 {
-  color: #919191;
+  text-align: center;
   margin-bottom: 10px;
   max-width: 800px;
 }
@@ -344,6 +369,12 @@ h2 {
   font-size: 32px;
   margin-top: 15px;
   font-weight: normal;
+}
+
+@media (max-width: 540px) {
+  h2 {
+    font-size: 22px;
+  }
 }
 
 h3 {
