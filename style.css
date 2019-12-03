@@ -68,6 +68,7 @@
   font-size: 18px;
   max-width: 300px;
   cursor: pointer;
+  outline: none;
 }
 
 .block1__button:hover {
@@ -186,6 +187,7 @@
   border: 1px solid black;
   margin-top: auto;
   cursor: wait;
+  outline: none;
 }
 
 .block2__price:hover {
@@ -345,6 +347,7 @@
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
   cursor: pointer;
+  outline: none;
 }
 
 .block3__button:hover {
