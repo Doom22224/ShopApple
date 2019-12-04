@@ -122,4 +122,10 @@
 
   }
 
+  &__invis {
+
+    @media (max-width: $mobileSmall) {
+      display: none;
+    }
+  }
 }
