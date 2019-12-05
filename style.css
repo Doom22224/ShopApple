@@ -18,9 +18,14 @@
 }
 
 .block1__slide {
-  margin-top: 100px;
   margin-bottom: 50px;
   max-width: 600px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 @media (max-width: 767px) {
@@ -34,6 +39,9 @@
   max-height: 400px;
   -o-object-fit: contain;
      object-fit: contain;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (max-width: 1250px) {
