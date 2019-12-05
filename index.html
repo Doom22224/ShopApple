@@ -7,17 +7,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title> Test SASS </title>
   
+
+  
   <link rel="stylesheet" href="swiper.min.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap" 
   rel="stylesheet">
+
+  <script type="text/javascript" src="jquery.1.7.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// Фикмированная шапка при скролле
+			// $("#header").removeClass("default");
+			// $(window).scroll(function(){
+			// 	if ($(this).scrollTop() > 20) {
+			// 		$("#header").addClass("default").fadeIn('fast');
+			// 	} else {
+			// 		$("#header").removeClass("default").fadeIn('fast');
+			// 	};
+			// });
+
+			// Плавный скролл по якорям
+			$(document).ready(function(){
+   $('button[href*=#]').bind("click", function(e){
+      var anchor = $(this);
+      $('html, body').stop().animate({
+         scrollTop: $(anchor.attr('href')).offset().top
+      }, 1000);
+      e.preventDefault();
+   });
+   return false;
+});
+		});
+	</script>
   
 </head>
 
 <body>   
 
   <main>
-
     <section class="white slider-promo swiper-container">
       <div class="swiper-wrapper">
 
@@ -29,7 +57,7 @@
             <div class= "block1__text">
               <h1>iPad mini.</h1>
               <p class="block1__text-slide">Теперь с поддержкой Apple Pencil.</p>
-              <button class="block1__button" href="#best">
+              <button class="block1__button" href="#best1" >
                 К просмотру 
               </button>
             </div>
@@ -43,7 +71,7 @@
         <div class= "block1__text">
           <h1>MacBook Pro.</h1>
           <p class="block1__text-slide">Самый мощный MacBook</p>
-          <button class="block1__button">
+          <button class="block1__button" href="#best1">
             К просмотру 
           </button>
         </div>
@@ -59,7 +87,7 @@
             <h1>Apple iPhone XR</h1>
             <p class="block1__text-slide"> Прекрасен во всех отношениях
               </p>
-            <button class="block1__button">
+            <button class="block1__button" href="#best1">
               К просмотру 
             </button>
           </div>
@@ -75,7 +103,7 @@
 
     <section > 
      
-      <div class="block2 container" name="best">
+      <div class="block2 container" id="best1">
         <h2 class="block2__best">
           ЛУЧШИЕ ТОВАРЫ 
         </h2>
@@ -88,7 +116,7 @@
                 RAM 16Гб, SSD 1024Гб Новый MacBook pro<br> Экран: 16" 3072x1920
                
                </p>
-              <button class="block2__price">
+              <button class="block2__price" href="#form">
               244 000 т.р.
               </button>
             </div>
@@ -103,7 +131,7 @@
                   Процессор: Intel Core i9 Boost up to 4.8ГГц
                   RAM 16Гб, SSD 1024Гб
                 </p>
-                <button class="block2__price">
+                <button class="block2__price" href="#form">
                     232 990 т.р.
                 </button>
               </div>
@@ -117,7 +145,7 @@
                   Процессор: Intel Core i9 Boost up to 4.8ГГц
                   RAM 16Гб, SSD 1024Гб
                 </p>
-                <button class="block2__price">
+                <button class="block2__price" href="#form">
                     69 990 т.р.
                 </button>
               </div>
@@ -131,7 +159,7 @@
                   Процессор: Intel Core i9 Boost up to 4.8ГГц
                   RAM 16Гб, SSD 1024Гб
                 </p>
-                <button class="block2__price">
+                <button class="block2__price" href="#form">
                     69 990 т.р.
                 </button>
               </div>
@@ -145,7 +173,7 @@
                   Процессор: Intel Core i9 Boost up to 4.8ГГц
                   RAM 16Гб, SSD 1024Гб
                 </p>
-                <button class="block2__price">
+                <button class="block2__price" href="#form">
                     69 990 т.р.
                 </button>
               </div>
@@ -159,7 +187,7 @@
                   Процессор: Intel Core i9 Boost up to 4.8ГГц
                   RAM 16Гб, SSD 1024Гб
                 </p>
-                <button class="block2__price">
+                <button class="block2__price" href="#form">
                     69 990 т.р.
                 </button>
               </div>
@@ -173,7 +201,7 @@
                   Процессор: Intel Core i9 Boost up to 4.8ГГц
                   RAM 16Гб, SSD 1024Гб
                 </p>
-                <button class="block2__price">
+                <button class="block2__price" href="#form">
                     69 990 т.р.
                 </button>
               </div>
@@ -187,7 +215,7 @@
                   Процессор: Intel Core i9 Boost up to 4.8ГГц
                   RAM 16Гб, SSD 1024Гб
                 </p>
-                <button class="block2__price">
+                <button class="block2__price" href="#form">
                     69 990 т.р.
                 </button>
               </div>
@@ -201,7 +229,7 @@
                   Процессор: Intel Core i9 Boost up to 4.8ГГц
                   RAM 16Гб, SSD 1024Гб
                 </p>
-                <button class="block2__price">
+                <button class="block2__price" href="#form">
                     69 990 т.р.
                 </button>
               </div>
@@ -215,7 +243,7 @@
                   Процессор: Intel Core i9 Boost up to 4.8ГГц
                   RAM 16Гб, SSD 1024Гб
                 </p>
-                <button class="block2__price">
+                <button class="block2__price" href="#form">
                     69 990 т.р.
                 </button>
               </div>
@@ -230,7 +258,7 @@
                   Процессор: Intel Core i9 Boost up to 4.8ГГц
                   RAM 16Гб, SSD 1024Гб
                 </p>
-                <button class="block2__price">
+                <button class="block2__price" href="#form">
                     73 990 т.р.
                 </button>
               </div>
@@ -245,7 +273,7 @@
     <section class="white">
       <div class="block3 container">
         
-        <div class="block3__content">
+        <div class="block3__content" id="form">
 
           <h2 class="block3__h2">
             Сделайте заявку для связи <br class="block3__invis"> с персональным менеджером.
@@ -286,32 +314,7 @@
 
     
   </main>
-  <script type="text/javascript" src="jquery.1.7.1.min.js"></script>
-  <script type="text/javascript">
-		$(document).ready(function(){
-			// Фикмированная шапка при скролле
-			$("#header").removeClass("default");
-			$(window).scroll(function(){
-				if ($(this).scrollTop() > 20) {
-					$("#header").addClass("default").fadeIn('fast');
-				} else {
-					$("#header").removeClass("default").fadeIn('fast');
-				};
-			});
 
-			// Плавный скролл по якорям
-			$('a[href^="#"]').click(function () { 
-			    elementClick = $(this).attr("href");
-				destination = $(elementClick).offset().top;
-				if($.browser.safari){
-				$('body').animate( { scrollTop: destination }, 1000 );
-				} else {
-			    	$('html').animate( { scrollTop: destination }, 1000 );
-				}
-				return false;
-		   });
-		});
-	</script>
   <script src="script.min.js"></script>
   <script>
       var sliderPromo = new Swiper('.slider-promo', {
