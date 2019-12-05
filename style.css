@@ -12,6 +12,7 @@
 
 @media (max-width: 767px) {
   .block1 {
+    margin-top: -150px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -55,6 +56,12 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .block1__text {
+    margin-top: -200px;
+  }
 }
 
 .block1__text-slide {
