@@ -101,14 +101,15 @@
     border: 1px solid black;
     border-radius: 4px;
     padding: 10px 14px 10px 14px;
-    background-color: #fff;
+    background: #000;
+    color: #fff;
     transition: 300ms ease;
     cursor: pointer;
     outline: none;
 
     &:hover {
-      background: #000;
-      color: #fff;
+      background: #fff;
+      color: #000;
     }
 
     @media (max-width: $tabletM) {

@@ -8,11 +8,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100vh;
 }
 
 @media (max-width: 767px) {
   .block1 {
-    margin-top: -150px;
+    height: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -36,7 +37,7 @@
 
 .block1__image-1 {
   width: 100%;
-  max-height: 400px;
+  max-height: 250px;
   -o-object-fit: contain;
      object-fit: contain;
   -ms-flex-item-align: center;
@@ -57,12 +58,6 @@
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .block1__text {
-    margin-top: -200px;
-  }
-}
-
 .block1__text-slide {
   font-size: 42px;
   max-width: 500px;
@@ -80,7 +75,8 @@
   border: 1px solid black;
   border-radius: 4px;
   padding: 10px 14px 10px 14px;
-  background-color: #fff;
+  background-color: #000;
+  color: #fff;
   font-size: 18px;
   max-width: 300px;
   cursor: pointer;
@@ -88,20 +84,20 @@
 }
 
 .block1__button:hover {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
 }
 
 @media (max-width: 767px) {
   .block1__button {
-    margin-bottom: 100px;
+    margin-bottom: 15px;
   }
 }
 
 .mobile {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -117,7 +113,6 @@
 
 @media (max-width: 767px) {
   .swiper-pagination {
-    margin-bottom: 50px;
     display: inline;
   }
 }
@@ -222,15 +217,16 @@
   width: 120px;
   text-align: center;
   border: 1px solid black;
-  background: #fff;
+  background: #000;
+  color: #fff;
   margin-top: auto;
   cursor: wait;
   outline: none;
 }
 
 .block2__price:hover {
-  border-color: #559cff;
-  color: #559cff;
+  background: #fff;
+  color: #000;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
 }
@@ -383,7 +379,8 @@
   border: 1px solid black;
   border-radius: 4px;
   padding: 10px 14px 10px 14px;
-  background-color: #fff;
+  background: #000;
+  color: #fff;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
   cursor: pointer;
@@ -391,8 +388,8 @@
 }
 
 .block3__button:hover {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 
 @media (max-width: 1024px) {
