@@ -20,6 +20,9 @@
 
   &__image-1 {
     width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+  
 
     @media (max-width:$tablet) {
       max-width:480px;
@@ -68,3 +71,8 @@
   }
 
 }
+
+.mobile {
+  padding-bottom: 50px;
+}
+
