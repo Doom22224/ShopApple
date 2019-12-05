@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title> Test SASS </title>
+  <link rel="stylesheet" href="swiper.min.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap" 
   rel="stylesheet">
@@ -13,11 +14,14 @@
 </head>
 
 <body>
+    
 
   <main>
 
-    <section class="white">
-      <div class= "block1 container"> 
+    <section class="white swiper-container">
+      <div class="swiper-wrapper">
+
+      <div class= "block1 container swiper-slide"> 
         <div class = "block1__slide">
           <img class= "block1__image-1" src="Image/MacPro1.jpg">
           
@@ -30,6 +34,25 @@
           </button>
         </div>
       </div>
+
+      <div class= "block1 container swiper-slide"> 
+          <div class = "block1__slide">
+            <img class= "block1__image-1" src="Image/MacPro1.jpg">
+            
+          </div>
+          <div class= "block1__text">
+            <h1>MacBook Pro.</h1>
+            <p class="block1__text-slide">Сsddsfdsdf jkdlkhfd djdj амый мощный MacBook</p>
+            <button class="block1__button">
+              К просмотру 
+            </button>
+          </div>
+        </div>
+
+        
+
+      </div>
+      <div class="slider-promo__pagination swiper-pagination"></div>
     </section>
 
     <section > 
@@ -243,8 +266,59 @@
         </div>
     </footer>
 
+    
   </main>
+  <script src="script.min.js"></script>
+  <script>
+      var sliderPromo = new Swiper('.slider-promo', {
+          centeredSlides: true,
+          spaceBetween: 0,
+          loop: true,
+          speed: 650,
+          autoplay: {
+              delay: 3500,
+              disableOnInteraction: false,
+          },
+          effect: 'fade',
+          fadeEffect: {
+              crossFade: true
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+      });
 
+      var slider = new Swiper('.slider', {
+          loop: true,
+          speed: 800,
+          loopedSlides: 5,
+          slidesPerView: 'auto',
+          spaceBetween: 0,
+          centeredSlides: true,
+          effect: 'coverflow',
+          coverflowEffect: {
+              rotate: 0,
+              stretch: 300,
+              depth: 200,
+              slideShadows: false,
+          },
+          grabCursor: true,
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+              767: {
+                  slidesPerView: 1,
+                  coverflowEffect: {
+                      stretch: 100,
+                      depth: 100,
+                  },
+              }
+          },
+      });
+  </script>
 </body>
 
 </html>
