@@ -105,6 +105,24 @@
   padding-bottom: 50px;
 }
 
+@media (max-width: 767px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    background: none;
+  }
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .swiper-pagination {
+    margin-bottom: 50px;
+    display: inline;
+  }
+}
+
 .block2 {
   max-width: 100%;
 }

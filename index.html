@@ -17,7 +17,7 @@
 
   <main>
 
-    <section class="white slider-promo">
+    <section class="white slider-promo swiper-container">
       <div class="swiper-wrapper">
 
         <div class= "block1 container swiper-slide"> 
@@ -66,8 +66,10 @@
 
       </div>
 
-      <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev ckick-next"></div>
+      <div class="swiper-button-next ckick-next"></div>
+
     </section>
 
     <section > 
@@ -292,7 +294,7 @@
           loop: true,
           speed: 650,
           autoplay: {
-              delay: 3500,
+              delay: 10000,
               disableOnInteraction: false,
           },
           grabCursor: true,

@@ -88,3 +88,20 @@
   padding-bottom: 50px;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+
+  @media(max-width:$mobile) {
+
+    background: none ;
+  }
+}
+
+.swiper-pagination {
+  display: none;
+
+  @media(max-width:$mobile) {
+    margin-bottom: 50px;
+    display: inline ;
+  }
+}
