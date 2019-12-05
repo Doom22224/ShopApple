@@ -184,6 +184,7 @@
   width: 120px;
   text-align: center;
   border: 1px solid black;
+  background: #fff;
   margin-top: auto;
   cursor: wait;
   outline: none;
@@ -449,5 +450,17 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+textarea {
+  font-family: inherit;
 }
 /*# sourceMappingURL=style.css.map */
