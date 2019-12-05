@@ -12,9 +12,9 @@
   &__bord {
     max-width: 1279px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
-    // justify-content: space-around;
+    margin: 0 -5px;
   }
 
   &__item {
@@ -24,16 +24,17 @@
     margin: 0 0 10px 0;
     background: #fff;
     border-radius: 5px;
+    margin: 0 5px 10px;
     overflow: hidden;
     position: relative;
 
     @media (max-width: $tablet) {
       flex-direction: column;
-      width: calc(33.33% - 5px);
+      width: calc(33.33% - 10px);
     }
 
     @media (max-width:$mobile) {
-      width: calc(50% - 5px);
+      width: calc(50% - 10px);
 
     }
 
